@@ -1,0 +1,25 @@
+TS compiles down to regular JS
+Can be used with frontend JS as well as with NodeJS
+
+
+Dynamic vs Static Languages
+Dynamically typed Languages - we dont explicitely assign types to variables, they are associated with run-time values. Eg - JS, Python, Ruby, PHP, Perl, etc
+Statically typed Languages - we need to assign types to variables explicitely.
+Eg - Java, Rust, Go, C, C++, etc.
+
+TypeScript - static typing but not really as it compiles down to JS
+
+
+SETUP
+`tsc -init` - creates a tsconfig.json file which contains all the configuration for the TS compiler
+change in config file to use ES6 as by default it compiles down to lower versions of JS
+
+also change the outDir and rootDir to respective ./dist and ./src folders
+
+you can do `tsc [name of the js file]` to explicitely compile a .ts file, but by simply writing `tsc` it will compile all the .ts files in the src folder, and if i have not set the rootDir to ./src then the command `tsc` would compile all the .ts files in the current directory, i.e, the root directory of the project, all files.
+
+`tsc -w` will watch for changes in the .ts files and compile them automatically, like a live compiler.
+
+
+
+BASIC TYPES
